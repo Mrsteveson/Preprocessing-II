@@ -2,6 +2,7 @@
 
 .btn {
     .my-button();
+    .animation-fadein();
 }
 
 .my-button(@bg-color:rgb(22, 186, 228), @font-color: white) {
@@ -19,4 +20,13 @@
         color: @bg-color;
         background-color: pink;
     }
+}
+
+.animation-fadein () {
+    animation: fadein 2.5s;
+
+    @keyframes fadein {
+        from {opacity: 0;}
+        to {opacity: 1;}
+      }
 }
