@@ -67,13 +67,36 @@
 }// home
 
 @media @mobile {
+  .home .content-section .text-content {
+    width: 100%;
+    .img-content {
+      width: 100%;
+    }
+  }
+}
+
+@media @mobile {
+  .home .content-section.inverse-content {
+    width: 100%;
+    flex-direction: column-reverse;
+  }
+}
+
+@media @mobile {
   .home .content-pick {
     display: flex;
     flex-direction: column;
-    padding: 2.5%;
+    padding: 2.5% 5%;
 
     .destination {
       width: 100%
   }
 }
 }
+
+
+// @media @mobile {
+//   .content-destination {
+//     
+//   }
+// }
