@@ -3,9 +3,9 @@
   background-color: #16bae4;
   margin: 10px 0;
   cursor: pointer;
-  width: 80%;
+  width: 90%;
   padding: 10px 5%;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   border-radius: 10px;
   text-align: center;
 }
@@ -316,7 +316,7 @@ header a {
   .home .content-pick {
     display: flex;
     flex-direction: column;
-    padding: 2.5% 5%;
+    padding: 5% 10%;
   }
   .home .content-pick .destination {
     width: 100%;
