@@ -1,1 +1,22 @@
 // Mixins in here
+
+.btn {
+    .my-button();
+}
+
+.my-button(@bg-color:rgb(22, 186, 228), @font-color: white) {
+    color: @font-color;
+    background-color: @bg-color;
+    margin: 10px 0;
+    cursor: pointer;
+    width: 80%;
+    padding: 10px 5%;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+
+    &:hover {
+        color: @bg-color;
+        background-color: @font-color;
+    }
+}
