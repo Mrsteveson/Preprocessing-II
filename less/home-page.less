@@ -1,7 +1,7 @@
 .home {
 
   .welcome {
-    border-bottom: 2px dashed rgb(180, 180, 180);
+    border-bottom: 2px dashed silver;
     padding: 15px 0;
   }
 
@@ -63,4 +63,17 @@
       margin-bottom: 30px;
     }
   }
+
 }// home
+
+@media @mobile {
+  .home .content-pick {
+    display: flex;
+    flex-direction: column;
+    padding: 2.5%;
+
+    .destination {
+      width: 100%
+  }
+}
+}
