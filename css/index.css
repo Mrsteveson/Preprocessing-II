@@ -326,6 +326,11 @@ header a {
   }
 }
 @media ( max-width: 515px) {
+  .home .content-section .img-content img {
+    width: 100%;
+  }
+}
+@media ( max-width: 515px) {
   .home .content-section.inverse-content {
     width: 100%;
     flex-direction: column-reverse;
