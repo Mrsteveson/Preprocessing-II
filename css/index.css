@@ -8,7 +8,7 @@
   font-size: 1.75rem;
   border-radius: 10px;
   text-align: center;
-  animation: fadein 2.5s;
+  animation: fadein 1s infinite;
 }
 .btn:hover {
   color: #16bae4;
