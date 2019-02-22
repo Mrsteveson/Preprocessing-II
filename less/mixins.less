@@ -33,9 +33,22 @@
   }
 }
 
-//   Here is a Fadein animation and its css!
-//   animation:fadein .5s infinite;
 
+.flex (@justify, @align) {
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.width100 () {
+    width: 100%;
+}
+
+
+//   Here is a Fadein animation and its css!
+// 
+//   animation:fadein 1s infinite;
+// 
 //   @keyframes fadein {
 //     from {
 //       opacity: 0;
@@ -48,7 +61,7 @@
 
 // .button-glow () {
 //     animation: glowing 5000ms infinite;
-
+// 
 //     @keyframes glowing {
 //         0% { box-shadow: 0 0 -10px purple; }
 //         40% { box-shadow: 0 0 20px purple; }
