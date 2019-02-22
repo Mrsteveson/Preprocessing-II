@@ -8,18 +8,28 @@
   font-size: 1.75rem;
   border-radius: 10px;
   text-align: center;
-  animation: fadein 1s infinite;
+  animation: disco 500ms infinite;
 }
 .btn:hover {
   color: #16bae4;
   background-color: pink;
 }
-@keyframes fadein {
-  from {
-    opacity: 0;
+@keyframes disco {
+  0% {
+    background: red;
+    box-shadow: 0 0 -10px red;
   }
-  to {
-    opacity: 1;
+  40% {
+    background: blue;
+    box-shadow: 0 0 20px blue;
+  }
+  60% {
+    background: purple;
+    box-shadow: 0 0 20px purple;
+  }
+  100% {
+    background: aqua;
+    box-shadow: 0 0 -10px aqua;
   }
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
