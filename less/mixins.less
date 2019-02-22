@@ -1,32 +1,86 @@
 // Mixins in here
 
 .btn {
-    .my-button();
-    .animation-fadein();
+  .my-button();
+  .animation-strobe();
 }
 
 .my-button(@bg-color:rgb(22, 186, 228), @font-color: white) {
-    color: @font-color;
-    background-color: @bg-color;
-    margin: 10px 0;
-    cursor: pointer;
-    width: 90%;
-    padding: 10px 5%;
-    font-size: 1.75rem;
-    border-radius: 10px;
-    text-align: center;
+  color: @font-color;
+  background-color: @bg-color;
+  margin: 10px 0;
+  cursor: pointer;
+  width: 90%;
+  padding: 10px 5%;
+  font-size: 1.75rem;
+  border-radius: 10px;
+  text-align: center;
 
-    &:hover {
-        color: @bg-color;
-        background-color: pink;
-    }
+  &:hover {
+    color: @bg-color;
+    background-color: pink;
+  }
 }
 
-.animation-fadein () {
-    animation: fadein 2.5s;
+// to do alternating button colors with the hover its as follows:
+// color:@bg-color;
+// background-color:@font-color;
+// must set the bg-color and font-color in the .my-button (here1, here2) like so.
 
-    @keyframes fadein {
-        from {opacity: 0;}
-        to {opacity: 1;}
-      }
+.animation-strobe () {
+  animation: disco 500ms infinite;
+
+  @keyframes disco {
+    0% { background: red; box-shadow: 0 0 -10px red; }
+    40% { background: blue; box-shadow: 0 0 20px blue; }
+    60% { background: purple; box-shadow: 0 0 20px purple; }
+    100% { background: aqua; box-shadow: 0 0 -10px aqua; }
+  }
 }
+
+
+.flex (@justify, @align) {
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.width100 () {
+    width: 100%;
+}
+
+
+//   Here is a Fadein animation and its css!
+// 
+// .animation-fadein () {
+//   animation:fadein 1s; 
+// 
+//   @keyframes fadein {
+//     from {
+//       opacity: 0;
+//     }
+//     to {
+//       opacity: 1;
+//     }
+//   }
+// }
+// 
+
+
+
+
+
+
+
+//  Here is the glowing/radiation effect animation
+// 
+// .button-glow () {
+//     animation: glowing 5000ms infinite;
+// 
+//     @keyframes glowing {
+//         0% { box-shadow: 0 0 -10px purple; }
+//         40% { box-shadow: 0 0 20px purple; }
+//         60% { box-shadow: 0 0 20px purple; }
+//         100% { box-shadow: 0 0 -10px purple; }
+//     }
+// }
